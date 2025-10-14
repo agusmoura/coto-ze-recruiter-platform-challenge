@@ -41,7 +41,7 @@ export function Login() {
     const success = await login({ email: data.email, pass: data.password });
 
     if (success) {
-      navigate("/candidates");
+      navigate("/candidatos");
     } else {
       setAuthError(
         "Los datos ingresados no coinciden. Por favor, verificá que sean correctos.",
@@ -83,7 +83,7 @@ export function Login() {
           </div>
         )}
 
-        <ActionButton type="submit" disabled={isSubmitting} className="mt-4">
+        <ActionButton type="submit" disabled={isSubmitting} className="mt-8">
           <span className="text-base font-medium">
             {isSubmitting ? "Iniciando sesión..." : "Iniciar sesión"}
           </span>

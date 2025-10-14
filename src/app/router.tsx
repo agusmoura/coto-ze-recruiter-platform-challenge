@@ -1,7 +1,7 @@
 import { ProtectedRoute } from "@/app/protectedRoute";
+import { RootRedirect } from "@/app/RootRedirect";
 import { AppShell } from "@/components/AppShell";
 import { Candidates } from "@/pages/Candidates";
-import { Home } from "@/pages/Home";
 import { Login } from "@/pages/Login";
 import { NotFound } from "@/pages/NotFound";
 import { createBrowserRouter } from "react-router-dom";
@@ -13,10 +13,10 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />,
+        element: <RootRedirect />,
       },
       {
-        path: "/candidates",
+        path: "/candidatos",
         element: (
           <ProtectedRoute>
             <Candidates />

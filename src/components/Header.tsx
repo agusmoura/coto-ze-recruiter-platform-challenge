@@ -1,5 +1,6 @@
 import { useAuth } from "@/auth/useAuth";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { ActionButton } from "@/components/ActionButton";
+import { Link, useNavigate } from "react-router-dom";
 import { Icon } from "./Icon";
 
 export function Header() {
@@ -34,36 +35,9 @@ export function Header() {
           <div className="flex items-center gap-6">
             {isAuthenticated && (
               <>
-                <NavLink
-                  to="/"
-                  className={({ isActive }) =>
-                    `px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                      isActive
-                        ? "bg-neutral-700 text-white"
-                        : "text-neutral-300 hover:bg-neutral-700 hover:text-white"
-                    }`
-                  }
-                >
-                  Inicio
-                </NavLink>
-                <NavLink
-                  to="/candidates"
-                  className={({ isActive }) =>
-                    `px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                      isActive
-                        ? "bg-neutral-700 text-white"
-                        : "text-neutral-300 hover:bg-neutral-700 hover:text-white"
-                    }`
-                  }
-                >
-                  Candidatos
-                </NavLink>
-                <button
-                  onClick={handleLogout}
-                  className="ml-2 px-4 py-2 rounded-md text-sm font-medium bg-orange-600 hover:bg-orange-700 text-white transition-colors"
-                >
-                  Cerrar sesión
-                </button>
+                <ActionButton onClick={handleLogout}>
+                  <span className="text-sm font-medium">Cerrar sesión</span>
+                </ActionButton>
               </>
             )}
           </div>

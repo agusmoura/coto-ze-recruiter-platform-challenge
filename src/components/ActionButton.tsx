@@ -11,14 +11,7 @@ interface ActionButtonProps {
 }
 
 /**
- * Componente de botón de acción responsive con animación spring y estados visuales.
- *
- * Incluye:
- * - Responsive: se adapta al ancho del contenedor
- * - Color principal: #FB6731
- * - Animación spring al hacer click (scale 0.97)
- * - Estados hover, active y disabled
- * - Sombra elevada
+ * Componente de botón de acción responsive con animación spring.
  *
  * @example
  * ```tsx

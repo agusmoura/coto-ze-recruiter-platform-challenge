@@ -10,7 +10,7 @@ export function AppShell() {
       <main
         id="main"
         role="main"
-        className="flex-1 mx-auto w-full max-w-6xl px-4 py-8"
+        className="flex-1 mx-auto w-full max-w-6xl px-4 py-8 flex flex-col"
       >
         <Outlet />
       </main>

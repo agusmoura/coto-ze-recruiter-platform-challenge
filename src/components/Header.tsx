@@ -66,14 +66,6 @@ export function Header() {
                 </button>
               </>
             )}
-            {!isAuthenticated && (
-              <NavLink
-                to="/login"
-                className="px-4 py-2 rounded-md text-sm font-medium bg-orange-600 hover:bg-orange-700 text-white transition-colors"
-              >
-                Iniciar sesión
-              </NavLink>
-            )}
           </div>
         </div>
       </nav>

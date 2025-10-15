@@ -1,73 +1,89 @@
-# React + TypeScript + Vite
+# 🎯 Recruiter Platform - Coto Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Plataforma web moderna para gestión y contacto de candidatos. Construida con React, TypeScript y Vite.
 
-Currently, two official plugins are available:
+## 🚀 Inicio Rápido
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Instalación
 
-## React Compiler
+```bash
+# Clonar el repositorio
+git clone <repository-url>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Instalar dependencias
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Ejecución
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+# Desarrollo
+npm dev
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Build para producción
+npm build
+
+# Preview de producción
+npm preview
 ```
+
+## 🔐 Credenciales de Acceso
+
+**Usuario Reclutador:**
+
+- Email: `recruiter@coto.com`
+- Password: `123456`
+
+> **Nota:** Estas credenciales son únicamente para desarrollo y testing.
+
+## ✨ Características
+
+- **🔒 Autenticación** - Sistema de login seguro para reclutadores
+- **👥 Gestión de Candidatos** - Búsqueda, filtrado y visualización de perfiles
+- **💬 Sistema de Contacto** - Envío de mensajes personalizados por rol
+- **📊 Historial** - Seguimiento de candidatos contactados
+- **🎨 UI Moderna** - Interfaz responsive con animaciones fluidas
+- **⚡ Performance** - Optimizado con React Query y lazy loading
+
+## 🛠️ Stack Tecnológico
+
+- **React 19** - UI Framework
+- **TypeScript** - Type Safety
+- **Vite** - Build Tool & Dev Server
+- **TanStack Query** - Data Fetching & Caching
+- **React Hook Form + Zod** - Form Management & Validation
+- **Tailwind CSS** - Styling
+- **Framer Motion** - Animations
+- **React Router** - Navigation
+
+## 📁 Estructura del Proyecto
+
+```
+src/
+├── app/           # Configuración de rutas y providers
+├── auth/          # Lógica de autenticación
+├── components/    # Componentes reutilizables
+├── hooks/         # Custom hooks
+├── pages/         # Páginas de la aplicación
+├── services/      # API calls y servicios
+└── types/         # Definiciones de tipos
+```
+
+## 🧹 Scripts Disponibles
+
+```bash
+npm dev       # Servidor de desarrollo
+npm build     # Build de producción
+npm preview   # Preview del build
+npm lint      # Ejecutar ESLint
+```
+
+## 📝 Notas
+
+- La aplicación usa localStorage para persistencia de sesión y historial
+- El modo desarrollo corre por defecto en `http://localhost:5173`
+- Compatible con navegadores modernos (ES2020+)
+
+---
+
+Desarrollado para Coto Ze!

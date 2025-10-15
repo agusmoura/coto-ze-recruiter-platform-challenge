@@ -56,6 +56,9 @@ npm preview
 - **Tailwind CSS** - Styling
 - **Framer Motion** - Animations
 - **React Router** - Navigation
+- **Lucide React** - Icons
+- **ESLint** - Linter
+- **Prettier** - Formatter
 
 ## 📁 Estructura del Proyecto
 

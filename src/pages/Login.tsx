@@ -21,7 +21,7 @@ const loginSchema = z.object({
 
 type LoginFormData = z.infer<typeof loginSchema>;
 
-export function Login() {
+export default function Login() {
   const { login } = useAuth();
   const navigate = useNavigate();
   const [authError, setAuthError] = useState<string | null>(null);

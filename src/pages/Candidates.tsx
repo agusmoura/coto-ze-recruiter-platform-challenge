@@ -20,7 +20,7 @@ import { useQuery } from "@tanstack/react-query";
 import { AlertCircle } from "lucide-react";
 import { useMemo, useState } from "react";
 
-export function Candidates() {
+export default function Candidates() {
   const [selectedCandidate, setSelectedCandidate] = useState<Candidate | null>(
     null,
   );

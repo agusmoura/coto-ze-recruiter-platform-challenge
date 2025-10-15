@@ -8,6 +8,7 @@ interface ActionButtonProps {
   className?: string;
   type?: "button" | "submit" | "reset";
   ariaLabel?: string;
+  size?: "small" | "medium" | "large";
 }
 
 /**
@@ -44,6 +45,7 @@ export function ActionButton({
   className = "",
   type = "button",
   ariaLabel,
+  size = "medium",
 }: ActionButtonProps) {
   return (
     <motion.button
@@ -54,13 +56,16 @@ export function ActionButton({
       className={`
         flex items-center justify-center gap-2.5
         w-full rounded-[10px]
-        bg-[#FB6731] px-6 py-3
+        bg-[#FB6731]
         text-white font-medium
         shadow-[0px_4px_8px_0px_rgba(0,0,0,0.35)]
         transition-all duration-200
         hover:bg-[#ff7542] hover:shadow-[0px_6px_12px_0px_rgba(0,0,0,0.4)]
         active:bg-[#e55620]
         disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-[#FB6731]
+        ${size === "small" && "px-4 py-2"}
+        ${size === "medium" && "px-6 py-3"}
+        ${size === "large" && "px-8 py-4"}
         ${className}
       `}
       whileTap={

@@ -30,6 +30,7 @@ jobs:
       - name: Prepare deployment files
         run: |
           cp Dockerfile dist/
+          cp .dockerignore dist/
           cp nginx.conf dist/ 2>/dev/null || true
 
       - name: Deploy to dist branch

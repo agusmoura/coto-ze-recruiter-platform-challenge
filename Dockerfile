@@ -1,7 +1,7 @@
 FROM nginx:alpine
 
 # Copia los archivos compilados
-COPY dist /usr/share/nginx/html
+COPY . /usr/share/nginx/html
 
 # Configuración de nginx para SPA
 RUN echo 'server { \

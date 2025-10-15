@@ -9,7 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -27,6 +26,11 @@ jobs:
         run: npm run build
         env:
           VITE_CANDIDATES_API_BASE_URL: ${{ secrets.VITE_CANDIDATES_API_BASE_URL }}
+
+      - name: Prepare deployment files
+        run: |
+          cp Dockerfile dist/
+          cp nginx.conf dist/ 2>/dev/null || true
 
       - name: Deploy to dist branch
         uses: peaceiris/actions-gh-pages@v3

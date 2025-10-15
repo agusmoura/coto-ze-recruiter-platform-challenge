@@ -44,6 +44,7 @@ npm preview
 - **📊 Historial** - Seguimiento de candidatos contactados
 - **🎨 UI Moderna** - Interfaz responsive con animaciones fluidas
 - **⚡ Performance** - Optimizado con React Query y lazy loading
+- **📱 Responsive Design** - Diseño responsivo para todas las pantallas. incluido filtros adaptados para desktop y mobile.
 
 ## 🛠️ Stack Tecnológico
 

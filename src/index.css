@@ -68,6 +68,25 @@
   font-family: "Gotham Rounded", sans-serif;
 }
 
+/* Font smoothing & antialiasing */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1;
+}
+
+/* Image smoothing */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* SVG smoothing */
+svg {
+  shape-rendering: geometricPrecision;
+}
+
 /* Smooth scrolling con touch en móviles */
 .-webkit-overflow-scrolling-touch {
   -webkit-overflow-scrolling: touch;

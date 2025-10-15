@@ -1,7 +1,7 @@
 import { useAuth } from "@/auth/useAuth";
-import { ActionButton } from "@/components/ActionButton";
-import { Icon } from "@/components/Icon";
-import { Input } from "@/components/Input";
+import { ActionButton } from "@/components/ui/ActionButton";
+import { Icon } from "@/components/ui/Icon";
+import { Input } from "@/components/ui/Input";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
 import { useForm } from "react-hook-form";

@@ -1,5 +1,5 @@
-import { ActionButton } from "@/components/ActionButton";
-import { Icon } from "@/components/Icon";
+import { ActionButton } from "@/components/ui/ActionButton";
+import { Icon } from "@/components/ui/Icon";
 import { useNavigate } from "react-router-dom";
 export function Home() {
   const navigate = useNavigate();

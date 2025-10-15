@@ -1,6 +1,6 @@
 import { ProtectedRoute } from "@/app/protectedRoute";
 import { RootRedirect } from "@/app/RootRedirect";
-import { AppShell } from "@/components/AppShell";
+import { AppShell } from "@/components/layout/AppShell";
 import { Candidates } from "@/pages/Candidates";
 import { Login } from "@/pages/Login";
 import { NotFound } from "@/pages/NotFound";

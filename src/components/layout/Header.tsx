@@ -1,8 +1,8 @@
 import { useAuth } from "@/auth/useAuth";
-import { ActionButton } from "@/components/ActionButton";
+import { ActionButton } from "@/components/ui/ActionButton";
+import { Icon } from "@/components/ui/Icon";
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Icon } from "./Icon";
 
 export function Header() {
   const { isAuthenticated, logout } = useAuth();
